@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application 1</title>
+    
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <!-- login box -->
+    <div class="login-box">
+        <!-- heading -->
+        <h1>FORM</h1>
+        <!-- name -->
+        <div class="name">
+            <label>Name :</label>
+            <input type="text" id="name">
+            <p id="error1"></p>
+        </div>
+        <!-- phone number -->
+        <div class="phone">
+            <label>Phone :</label>
+            <input type="text" id="phone">
+            <p id="error2"></p>
+        </div>
+        <!-- email -->
+        <div class="emaill">
+        <label>Email :</label>
+        <input type="email" id="email">
+        <p id="error3"></p>
+        </div>
+        <!-- gender -->
+        <div class="gender">
+            <fieldset class="gies">
+                <legend>Gender</legend>
+                <input type="radio" name="Gender" id="male"><label for="male">Male</label>
+                <input type="radio" name="Gender" id="female"><label for="female">Female</label>
+            </fieldset>
+            <p id="error4"></p>
+        </div>
+        <!-- address -->
+        <div class="address">
+        <label>Address :</label>
+        <input type="text" id="address">
+        <p id="error5"></p>
+        </div>
+        <!-- hobbies -->
+        <div class="hobbies">
+            <fieldset class="fies">
+                <legend>Hobbies</legend>
+                <input type="checkbox" id="football"><label for="Football">Football</label>
+                <input type="checkbox" id="basketball"><label for="Basketball">Basketball</label>
+                <input type="checkbox" id="table-tennis"><label for="TableTennis">Table-Tennis</label>
+                <input type="checkbox" id="guitar"><label for="Guitar">Guitar</label>
+            </fieldset>
+            <p id="error6"></p>
+        </div>
+        <!-- skills -->
+        <div class="skills">
+            <fieldset class="skl">
+                <legend>Skills</legend>
+                <input type="checkbox" id="c"><label for="c">C</label>
+                <input type="checkbox" id="c++"><label for="c++">C++</label>
+                <input type="checkbox" id="htmlcss"><label for="htmlcss">HTML & CSS</label>
+                <input type="checkbox" id="python"><label for="python">Python</label>
+            </fieldset>
+            <p id="error7"></p>
+        </div>
+        <!-- country -->
+        <div class="country">
+        <label>Country :</label>
+        <select id="country">
+            <option>Nepal</option>
+            <option>India</option>
+            <option>China</option>
+            <option>Bhutan</option>
+            <option>Korea</option>
+        </select>
+        </div>
+        <!-- submit button -->
+        <div class="submit">
+        <!-- <button onclick="msg()"> -->
+        <button onclick="validate()">
+            Submit
+            <!-- <input type="button" value="click" onclick="msg()"> -->
+        </button>
+        </div>
+    </div>
